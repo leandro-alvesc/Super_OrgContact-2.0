@@ -57,6 +57,11 @@ def get_contacts():
     return flask.jsonify(emails)
 
 
+@app.route('/')
+def index():
+    return 'Para acessar a API: /auth/google'
+
+
 def extract_contacts(flask_contacts):
     dados = [item['emailAddresses'][0] for item in flask_contacts['connections']]
     emails = [dado['value'] for dado in dados]
