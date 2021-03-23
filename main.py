@@ -8,7 +8,7 @@ import googleapiclient.discovery
 
 from secret_key import SECRET_KEY
 
-DEBUG = True
+DEBUG = False
 
 # Client Secrets File
 CLIENT_SECRETS_FILE = "client_secret.json"
@@ -78,5 +78,5 @@ def extract_contacts(flask_contacts):
 
 if __name__ == '__main__':
     # Para rodar localmente - Retirar ao executar no servidor
-    os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+    # os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     app.run()
