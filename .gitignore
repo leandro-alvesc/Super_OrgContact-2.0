@@ -1,6 +1,8 @@
 client_secret.json
 secret_key.py
 secret_key
+datastore_credentials.json
+datastore_credentials
 .idea
 __pycache__
 
