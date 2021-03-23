@@ -54,8 +54,6 @@ def get_contacts():
 
     emails = extract_contacts(contacts)
 
-    print(emails)
-
     return flask.jsonify(emails)
 
 
